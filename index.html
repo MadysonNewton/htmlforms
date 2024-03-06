@@ -9,10 +9,83 @@
 </head>
 
 <body>
-    <form action="result.html" method="get">
+    <form action="result.html" method="get" enctype="multipart/form-data">
         <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Username" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="0" max="200">
+        </div>
+
+        <div>
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="1994-03-05">
+        </div>
+
+        Favorite Food
+        <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" id="banana">
+        </div>
+        <div>
+            <label for="Apple">Apple</label>
+            <input type="checkbox" name="Apple" id="Apple">
+        </div>
+
+        Gender
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        </div>
+
+        <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor" multiple>
+                <option value="Green">Green</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+            </select>
+
+            <div>
+                <label for="bio">Bio</label>
+                <textarea name="Bio" id="Bio"></textarea>
+            </div>
+
+            <input type="hidden" name="hidden" value="hi">
+
+            <div>
+                <label for="file">File</label>
+                <input type="file" id="file" name="file">
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+
+            <div>
+                <label for="URL">URL</label>
+                <input type="url" name="url" id="url">
+             </div>
+
+             <div>
+                <label for="Color">Color</label>
+                <input type="color" name="color" id="color">
+             </div>
+
         </div>
 
         <div>
@@ -21,7 +94,7 @@
         </div>
 
         <button type="submit">Submit</button>
-        
+
         <button type="reset">Reset</button>
     </form>
 </body>
